@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="main.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Layered</title>
+</head>
+<body>
+    <div class="aboveground"> 
+        these are ugly colors and I will change them but they represent layers ok
+    </div>
+    <div class="concrete"></div>
+    <div class="inbetween"></div>
+    <div class="tile"></div>
+    
+    <div class="layer1">
+            <p id="welcome">Welcome to the NYC Subway</p>
+        <img src="images/subwaymap.png"id="map"/>
+       <div data-aos="fade-left"  id="card" >
+            <img src="test/metrocard.png"/>
+       </div> 
+    </div>
+        <p> Yikes, you just ran into a solicitor.</p>
+    <div data-aos="fade-down" class="annoyed">
+        <button onclick="myFunction()">Hello!</button>
+        <p id="demo"></p>
+    </div>
+    <div class="layer2">
+            <p>Witness the local flora and fauna</p>
+        <div id="rat" data-aos="fade-left">
+             <img src="test/pizza rat.gif"/>
+        </div>
+        <div id="flower" data-aos="fade-right">
+                <img src="images/flower tiles.jpg"/>
+        </div>
+    </div>
+    <div class="layer3">
+       <div data-aos="fade-down"> <img src="test/delay.jpg"/>
+        </div>
+        <div class="thought1"> I hope no one notices <br> I forgot to wear deodorant today</div>
+        <img src="images/sweat.gif" id="sweat"/>
+        <div class="thought2"> god help me this guy stinks</div>
+        <img src="images/angry.png" id="angry"/>
+        <div class="thought3"> good thing I anticipated <br> how shitty the mta is <br> I took this delay into consideration</div>
+        <div class="thought4"> her elbow is literally INSIDE my rib but we can't move</div>
+    </div>
+    <div class="layer4">
+        <p> There is no service on the train and you didn't download your book for offline reading. <br>
+            Where are you resting your eyes?
+        </p>
+        <div id="eyes">
+            <img src="images/keano.jpg" id="hover"/>
+        </div>
+        <div id="eyes">
+            <img src="images/eyecontact.gif" id="hover"/>
+        </div>
+        <div id="eyes">
+            <img src="images/floor.jpg" id="hover"/>
+        </div>
+        <div id="eyes">
+            <img src="images/hands.png" id="hover"/>
+        </div>
+    </div>
+    <div class="layer5">
+        <p> Enjoy the onboard entertainment</p>
+        <div class="entertainment" data-aos="fade-right">
+             <img src="images/performer.gif" id="performer"/> 
+        </div> 
+    </div>
+    <div class="layer6">
+        <p>
+           I know there is a lot to see, <br> but don't forget to get off at your stop!
+        </p>
+        <div data-aos="fade-down"> <img src="images/laststop.jpg" id="laststop"/>
+        </div> 
+        <div class="getoff">
+            oh shit did I miss my stop
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
