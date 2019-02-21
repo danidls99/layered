@@ -10,10 +10,13 @@
     <title>Layered</title>
 </head>
 <body>
-    <div class="aboveground"> 
-        these are ugly colors and I will change them but they represent layers ok
-    </div>
     <div class="concrete"></div>
+    <div class="dirt">
+        <p> Somewhere deep underneath New York City...</p>
+    </div>
+    <div class="dirt2"></div>
+    <div class="dirt3"></div>
+    <div class="dirt4"></div>
     <div class="inbetween"></div>
     <div class="tile"></div>
     
@@ -52,24 +55,30 @@
         <p> There is no service on the train and you didn't download your book for offline reading. <br>
             Where are you resting your eyes?
         </p>
-        <div id="eyes">
-            <img src="images/keano.jpg" id="hover"/>
+        <div class="squares">
+            <div id="eyes">
+                <img src="images/keano.jpg" id="hover"/>
+            </div>
+            <div id="eyes">
+                <img src="images/eyecontact.gif" id="hover"/>
+            </div>
+            <div id="eyes">
+                <img src="images/floor.jpg" id="hover"/>
+            </div>
+            <div id="eyes">
+                <img src="images/hands.png" id="hover"/>
         </div>
-        <div id="eyes">
-            <img src="images/eyecontact.gif" id="hover"/>
-        </div>
-        <div id="eyes">
-            <img src="images/floor.jpg" id="hover"/>
-        </div>
-        <div id="eyes">
-            <img src="images/hands.png" id="hover"/>
         </div>
     </div>
     <div class="layer5">
-        <p> Enjoy the onboard entertainment</p>
+        <p id="enjoy"> Enjoy the onboard entertainment.</p>
         <div class="entertainment" data-aos="fade-right">
              <img src="images/performer.gif" id="performer"/> 
         </div> 
+        <div data-aos="fade-down" class="tip">
+                <audio id="sound1" src="coins.wav" preload="auto"></audio>
+            <button onclick="document.getElementById('sound1').play();">Tip him?</button>
+        </div>
     </div>
     <div class="layer6">
         <p>
